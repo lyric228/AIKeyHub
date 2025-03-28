@@ -15,6 +15,26 @@ Also, while writing filters for search, I noticed that, for example, it is almos
 AND (path:*.env OR path:*.json OR path:*.yaml OR path:*.yml OR path:*.txt OR path:.env OR path:config)
 ```
 
+# [Cohere](https://github.com/search?q=%28+++%28cohere_api_key+OR+COHERE_KEY+OR+%22cohere+api%22%29++++AND++++%2F%5BA-Z0-9%5D%7B40%7D%2F++++AND++++%28language%3Apython+OR+language%3Ajavascript+OR+language%3Ayaml%29+%29++NOT+language%3Amarkdown++NOT+path%3Atest++NOT+path%3Aexample++NOT+path%3Amock&type=code)
+```
+(
+  (cohere_api_key OR COHERE_KEY OR "cohere api") 
+  AND 
+  /[A-Z0-9]{40}/ 
+  AND 
+  (language:python OR language:javascript OR language:yaml)
+) 
+NOT language:markdown 
+NOT path:test 
+NOT path:example 
+NOT path:mock
+```
+
+# [Gemini](https://github.com/search?q=%22AIzaSy%22+AND+%28gemini+OR+%22generativelanguage.googleapis.com%22%29+AND+path%3Asrc+AND+%28path%3A*.env+OR+path%3A*.json+OR+path%3A*.yaml+OR+path%3A*.yml+OR+path%3A*.txt+OR+path%3A.env+OR+path%3Aconfig%29&type=code)
+```
+"AIzaSy" AND (gemini OR "generativelanguage.googleapis.com") AND path:src AND (path:*.env OR path:*.json OR path:*.yaml OR path:*.yml OR path:*.txt OR path:.env OR path:config)
+```
+
 # [DeepSeek]()
 ```
 W.I.P.
@@ -23,9 +43,4 @@ W.I.P.
 # [Anthropic]()
 ```
 W.I.P.
-```
-
-# [Gemini](https://github.com/search?q=%22AIzaSy%22+AND+%28gemini+OR+%22generativelanguage.googleapis.com%22%29+AND+path%3Asrc+AND+%28path%3A*.env+OR+path%3A*.json+OR+path%3A*.yaml+OR+path%3A*.yml+OR+path%3A*.txt+OR+path%3A.env+OR+path%3Aconfig%29&type=code)
-```
-"AIzaSy" AND (gemini OR "generativelanguage.googleapis.com") AND path:src AND (path:*.env OR path:*.json OR path:*.yaml OR path:*.yml OR path:*.txt OR path:.env OR path:config)
 ```
