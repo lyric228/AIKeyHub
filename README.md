@@ -41,6 +41,7 @@ NOT path:mock
 "AIzaSy" AND (gemini OR "generativelanguage.googleapis.com") AND path:src AND (path:*.env OR path:*.json OR path:*.yaml OR path:*.yml OR path:*.txt OR path:.env OR path:config)
 ```
 
+<!--
 # [DeepSeek]()
 ```
 W.I.P.
@@ -50,3 +51,4 @@ W.I.P.
 ```
 W.I.P.
 ```
+-->
