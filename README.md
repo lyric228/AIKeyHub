@@ -1,7 +1,15 @@
 Hello everyone, many of you probably know that using a search on github, you can find free working api keys from various services, for example, api keys from OpenAI, deepseek, etc., and I managed to make a couple of working filters for searching on github to find a lot of working keys, I certainly do not promise that everything will be fine. it works 100%, but you can try it if you want.
 Also, while writing filters for search, I noticed that, for example, it is almost impossible to write a good filter for Mistral, since their keys seem to be completely random, so I don't have any ideas how to make filters for them yet, sorry.nt.
 
-### !A lot of working api keys in Together!
+**Search Filter Rating**
+================
+
+* ⭕️ **Extremely Hard to Find**: Very difficult to find, requires a lot of time and effort.
+* 🔴 **Hard to Find**: Difficult to find, requires some effort and time.
+* 🟡 **Medium**: Average search difficulty, requires some time and effort.
+* 🟢 **Easy to Find**: Easy to find, requires minimal effort and time.
+* 🟣 **Extremely Easy to Find**: Very easy to find, practically impossible to miss.
+
 # [Together](https://github.com/search?q=%2F%5Ba-zA-Z0-9%5D%7B40%7D%2F%20AND%20(TOGETHER_API_KEY)%20AND%20NOT%20(github.com%2F%20OR%20EXAMPLE%20OR%20example%20OR%20commit)&type=code)
 ```
 /[a-zA-Z0-9]{40}/ AND (TOGETHER_API_KEY) AND NOT (github.com/ OR EXAMPLE OR example OR commit)
